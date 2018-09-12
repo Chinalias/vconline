@@ -5,7 +5,7 @@ const client = new Discord.Client();
 console.log("Welcome Again !");
 
 client.on('voiceStateUpdate', (old, now) => {
-  const channel = client.channels.get('487304344149164052');
+  const channel = client.channels.get('489465001229287437');
   const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
   const size = channel.name.match(/\[\s(\d+)\s\]/);
   if (!size) return channel.setName(`Voice Online: ${currentSize}`);

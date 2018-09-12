@@ -12,4 +12,4 @@ client.on('voiceStateUpdate', (old, now) => {
   if (currentSize !== size) channel.setName(`Voice Online: ${currentSize}`);
 });
 
-client.login("NDY4ODE0MzAzOTg2NzEyNTg5.DnRvbA.vZk96mAw4Rh6aZMIIJkmrymSE6I");
+client.login(process.env.BOT_TOKEN);
